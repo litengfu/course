@@ -1,36 +1,28 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import './assets/js/rem.js';
+import HelloWorld from './components/HelloWorld.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    HelloWorld
+  }
 }
 </script>
 
 <style>
-  @import "./assets/fonts/iconfont.css";
-  @import "./assets/css/gast.css";
-  html{
-    width: 100vw;
-    height: 100vh;
-  }
-  html *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  a:active,a:link,a:hover,a:visited{
-    text-decoration: none;
-    background-color: none;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent;
-  }
-  #app{
-    width: 100%;
-    height: 100%;
-  }
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
